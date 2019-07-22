@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --progress"
+    "build": "webpack --progress",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d www"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janechu/kind.git"
+    "url": "git+https://github.com/kindtechproject/childportal.git"
   },
   "keywords": [
     "javascript"
@@ -17,9 +19,9 @@
   "author": "Jane Chu",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/janechu/kind/issues"
+    "url": "https://github.com/kindtechproject/childportal/issues"
   },
-  "homepage": "https://github.com/janechu/kind#readme",
+  "homepage": "https://kindtechproject.github.io/childportal/",
   "dependencies": {
     "@microsoft/fast-components-foundation-react": "^3.0.0",
     "@microsoft/fast-jss-manager": "^4.0.0",
@@ -27,6 +29,7 @@
     "@microsoft/fast-jss-utilities": "^4.0.0",
     "csstype": "^2.6.3",
     "exenv-es6": "^1.0.0",
+    "gh-pages": "^2.0.1",
     "raf-throttle": "^2.0.3",
     "react": "^16.6.0",
     "react-dom": "^16.6.0",
