@@ -36,10 +36,10 @@ class PreparationPlan extends Foundation<
             <div className={this.generateClassNames()}>
                 <MenuBar logo={true} />
                 <h1 className={get(this.props, "managedClasses.preparationPlan_title")}>
-                    {pages.pageTitles[this.props.language].yourResponsibilities}
+                    {pages.pageTitles[this.props.language].preparationPlan}
                 </h1>
                 <h2 className={get(this.props, "managedClasses.preparationPlan_subtitle")}>
-                    Make sure you have all the documents you need to be prepared.
+                    {pages.preparationPlan[this.props.language].subTitle}
                 </h2>
                 {this.renderChecklist()}
                 {this.renderSupplementaryChecklistTitle()}
