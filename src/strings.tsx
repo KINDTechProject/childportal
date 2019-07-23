@@ -1,7 +1,7 @@
 import React from "react";
 import { CarouselHandledProps } from "./components/carousel/carousel.props";
 import {
-    DoNotLieLogo, ConstitutionalRightsLogo
+    DoNotLieLogo, ConstitutionalRightsLogo, StaySilentLogo, SayNoLogo, LeaveCalmlyLogo, LawyerLogo
 } from "./components";
 
 export interface Checklist {
@@ -200,6 +200,26 @@ export const pages: Pages = {
                     image: <ConstitutionalRightsLogo />,
                     title: "Constitutional Rights",
                     content: "You have constitutional rights, regardless of your immigration status."
+                }, 
+                {
+                    image: <StaySilentLogo />,
+                    title: "Stay Silent",
+                    content: 'You have the right to remain silent. To exercise that right, say “I choose to remain silent".'
+                },
+                {
+                    image: <SayNoLogo />,
+                    title: "Say No to a Search",
+                    content: "You have the right to refuse a search of yourself, your car or your home."
+                },
+                {
+                    image: <LeaveCalmlyLogo />,
+                    title: "Leave Calmly",
+                    content: "If you’re not under arrest, you have the right to leave. Ask if you’re under arrest or if you may leave."
+                },
+                {
+                    image: <LawyerLogo />,
+                    title: "Lawyer",
+                    content: "If you are arrested by police, you have the right to a lawyer. Ask for a lawyer immediately."
                 }
             ]
         },
@@ -209,6 +229,26 @@ export const pages: Pages = {
                     image: <ConstitutionalRightsLogo />,
                     title: "Derechos Constitucionales",
                     content: "Tú tienes derechos constitucionales sin importar tu estatus migratorio."
+                },
+                {
+                    image: <StaySilentLogo />,
+                    title: "Quedarse Callado",
+                    content: 'Tú tienes el derecho a permanecer en silencio.Para ejercer ese derecho di: “Elijo permanecer callado”.'
+                },
+                {
+                    image: <SayNoLogo />,
+                    title: "Decir No a una Búsqueda",
+                    content: "Tienes el derecho de rechazar a que revisen tu casa, tu carro, o tú persona."
+                },
+                {
+                    image: <LeaveCalmlyLogo />,
+                    title: "Irte Con Calma",
+                    content: "Si no estás bajo arresto, tienes el derecho a retirarte de manera calmada.Pregunta si estás bajo arresto o si puedes irte."
+                },
+                {
+                    image: <LawyerLogo />,
+                    title: "Un Abogado",
+                    content: "Si la policía te arresta, tienes el derecho de tener un abogado. Solicita un abogado inmediatamente."
                 }
             ]
         }
