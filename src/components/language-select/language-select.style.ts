@@ -10,10 +10,11 @@ export interface LanguageSelectClassNameContract {
 const languageSelectStyles: ComponentStyles<LanguageSelectClassNameContract, {}> = {
     languageSelect: {
         padding: "20px 40px 20px 20px",
+        marginTop: "13px",
         "&::before, &::after": {
             content: "''",
             position: "absolute",
-            top: "45px",
+            top: "58px",
             background: accentColor,
             width: "20px",
             height: "3px",

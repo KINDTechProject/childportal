@@ -96,6 +96,7 @@ const menuStyles: ComponentStyles<MenuClassNameContract, {}> = {
         width: `${boxWidth}px`,
         height: `${boxHeight}px`,
         margin: "22px",
+        marginTop: "35px",
         border: "none",
         background: "transparent",
         "& span": {
