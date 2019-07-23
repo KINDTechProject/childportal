@@ -28,7 +28,7 @@ class MenuBar extends React.Component<MenuBarProps, {}> {
         if (this.props.logo) {
             return (
                 <div style={{ textAlign: "left", flexGrow: 1 }}>
-                    <SmallLogo kindTextColor={accentColor} padding={"20px 0"} language={this.props.language} />
+                    <SmallLogo kindTextColor={accentColor} padding={"25px 0"} language={this.props.language} />
                 </div>
             );
         }

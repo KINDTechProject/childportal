@@ -12,8 +12,8 @@ export class SmallLogo extends React.Component<SmallLogoProps, {}> {
             return (
                 <svg
                 style={{ padding: this.props.padding || 0, flexGrow: 1 }}
-                width="187"
-                height="24"
+                width="405"
+                height="52"
                 viewBox="0 0 165 18" 
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,8 +45,8 @@ export class SmallLogo extends React.Component<SmallLogoProps, {}> {
         return (
             <svg
                 style={{ padding: this.props.padding || 0, flexGrow: 1 }}
-                width="187"
-                height="24"
+                width="405"
+                height="52"
                 viewBox="0 0 187 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"

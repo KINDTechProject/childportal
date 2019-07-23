@@ -58,9 +58,9 @@ class Landing extends Foundation<
                     <li key={index} style={{ backgroundColor: path.landingLogoBackplate }}>
                         <Link to={path.path}>
                             {path.landingLogo}
-                            <div>
+                            <h1 className={get(this.props, "managedClasses.landing_contentRegionTitle")}>
                                 {path.displayName[this.props.language]}
-                            </div>
+                            </h1>
                         </Link>
                     </li>
                 );

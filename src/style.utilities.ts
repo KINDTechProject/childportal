@@ -4,6 +4,6 @@ export const pageTitle: CSSRules<{}> = {
     textAlign: "center",
     color: "white",
     fontFamily: "Fredoka One, Arial, sans-serif",
-    fontSize: "30px",
-    fontWeight: "400"
+    fontSize: "3.5em",
+    fontWeight: "100"
 };
