@@ -61,6 +61,7 @@ const menuStyles: ComponentStyles<MenuClassNameContract, {}> = {
     },
     menu__open: {
         display: "block",
+        zIndex: "1",
         position: "absolute",
         background: accentColor,
         height: "100vh",
@@ -84,7 +85,8 @@ const menuStyles: ComponentStyles<MenuClassNameContract, {}> = {
         },
         "& $menu_list": {
             display: "block"
-        }
+        }, 
+        
     },
     menu_trigger: {
         position: "relative",
