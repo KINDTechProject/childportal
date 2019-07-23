@@ -13,6 +13,9 @@ font.setAttribute("rel", "stylesheet");
 document.body.appendChild(root);
 document.body.setAttribute("style", "margin: 0");
 document.head.appendChild(font);
+const meta: HTMLElement = document.createElement("META");
+meta.setAttribute("robots", "noindex,nofollow");
+document.head.appendChild(meta);
 
 const render = () => {
     ReactDOM.render(
