@@ -7,5 +7,5 @@ A React site for Kind.
 ## Running local environment
 - `npm start`
 
-## Building the site for production
-- `npm run build`
+## Deploy site to Github Pages
+- `npm run deploy`
