@@ -14,6 +14,7 @@ export interface KidsLikeYouProps {
 }
 
 export interface PreparationPlanProps {
+    subTitle: string;
     checklist: Checklist[];
     supplementaryChecklistTitle: string;
     supplementaryChecklist: Checklist[];
@@ -66,6 +67,7 @@ export const pages: Pages = {
     },
     preparationPlan: {
         en: {
+            subTitle: "Make sure you have all the documents you need to be prepared.",
             checklist: [
                 {
                     title: "Passport",
@@ -118,6 +120,7 @@ export const pages: Pages = {
             ]
         },
         es: {
+            subTitle: "Asegúrese de tener todos los documentos que necesita para estar preparado.",
             checklist: [
                 {
                     title: "Pasaporte"
