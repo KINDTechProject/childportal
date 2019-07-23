@@ -1,7 +1,7 @@
 import React from "react";
 import { CarouselHandledProps } from "./components/carousel/carousel.props";
 import {
-    DoNotLieLogo, ConstitutionalRightsLogo, StaySilentLogo, SayNoLogo, LeaveCalmlyLogo, LawyerLogo
+    DoNotLieLogo, ConstitutionalRightsLogo, StaySilentLogo, SayNoLogo, LeaveCalmlyLogo, LawyerLogo, StayCalmLogo, PoliceLogo, PapersLogo, BePreparedLogo
 } from "./components";
 
 export interface Checklist {
@@ -177,18 +177,58 @@ export const pages: Pages = {
         en: {
             cards: [
                 {
+                    image: <StayCalmLogo />,
+                    title: "Stay Calm",
+                    content: "If stopped by law enforcement or immigration officials, remain calm and respectful.​"
+                },
+                {
+                    image: <PoliceLogo />,
+                    title: "Police",
+                    content: "Do not interfere with or obstruct the officers.​"
+                },
+                {
                     image: <DoNotLieLogo />,
                     title: "Do Not Lie",
                     content: "Do not lie about your immigration status. Do not give false information or fake documents to officers.​"
+                },
+                {
+                    image: <PapersLogo />,
+                    title: "Papers",
+                    content: "If you are not a US citizen, and an immigration officer asks for your immigration papers, ​you must show the papers if you have them with you."
+                },
+                {
+                    image: <BePreparedLogo />,
+                    title: "Be Prepared",
+                    content: "Prepare yourself and your family in case you are arrested."
                 }
             ]
         },
         es:{
             cards: [
                 {
+                    image: <StayCalmLogo />,
+                    title: "Permanece en Calma",
+                    content: "En caso de ser detenido por la policía u oficiales de inmigración, permanece en calma y se respetuoso​.​"
+                },
+                {
+                    image: <PoliceLogo />,
+                    title: "Policia",
+                    content: "No interfieras ni obstruyas a los oficiales."
+                },
+                {
                     image: <DoNotLieLogo />,
                     title: "No Mientas",
                     content: "No mientas sobre tu estatus migratorio. No proporciones información o documentos falsos a los oficiales.​"
+                },
+                {
+                    image: <PapersLogo />,
+                    title: "Papeles",
+                    content: "Si no eres ciudadano de los EEUU, y un oficial de inmigración te solicita tus papeles migratorios, deberás mostrar tus documentos en caso de contar con ellos."
+                },
+                {
+                    image: <BePreparedLogo />,
+                    title: "Prepárate",
+                    content: "Prepárate y prepara a tú familia en case de ser arrestado.​"
                 }
             ]
         }

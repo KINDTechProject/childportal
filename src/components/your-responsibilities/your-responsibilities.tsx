@@ -1,7 +1,6 @@
 import React from "react";
 import { get } from "lodash-es";
 import Foundation, {
-    FoundationProps,
     HandledProps,
 } from "@microsoft/fast-components-foundation-react";
 import {
@@ -16,31 +15,56 @@ import {
 import {
     pages
 } from "../../strings";
-import { Carousel } from "../carousel";
+import { Carousel, CarouselSlide } from '@microsoft/fast-components-react-msft';
 import { connect, MapStateToProps } from "react-redux";
+import { Card } from "../card";
+import { CardHandledProps } from "../card/card.props";
+
 
 class YourResponsibilities extends Foundation<
     YourResponsibilitiesHandledProps,
     YourResponsibilitiesUnhandledProps,
     YourResponsibilitiesState
-> {
+    > {
     public static displayName: string = "YourResponsibilities";
+
 
     protected handledProps: HandledProps<YourResponsibilitiesHandledProps> = {
         language: void 0,
         managedClasses: void 0,
     };
 
+
     public render(): React.ReactNode {
         return (
             <div className={this.generateClassNames()}>
-                <MenuBar logo={true} />
-                <h1 className={get(this.props, "managedClasses.yourResponsibilities_title")}>
-                    {pages.pageTitles[this.props.language].yourResponsibilities}
-                </h1>
-                {this.renderCards()}
-            </div>
+        <MenuBar logo={true} />
+        <h1 className={get(this.props, "managedClasses.yourResponsibilities_title")}>
+            {pages.pageTitles[this.props.language].yourResponsibilities}
+        </h1>
+                { this.renderCards() }
+            </div >
         );
+    }
+
+
+    private getCarouselSlides(): CarouselSlide[] {
+    let object: CarouselSlide[] = [];
+    var cards = pages.yourResponsibilities[this.props.language].cards;
+    var i;
+    for (i = 0; i < cards.length; i++) {
+        object[i] = {
+            content: this.getContents(cards[i]),
+            id: i+1
+        };
+    }
+        return object;
+    } 
+    private getContents(cards: CardHandledProps): (className?: string) => React.ReactNode {
+        return (className?: string): React.ReactNode => (
+            <Card {...cards}
+            />
+        )
     }
 
     public generateClassNames(): string {
@@ -49,7 +73,12 @@ class YourResponsibilities extends Foundation<
 
     private renderCards(): React.ReactNode {
         return (
-            <Carousel cards={pages.yourResponsibilities[this.props.language].cards} />
+
+            <Carousel
+                label="Carousel"
+                items={this.getCarouselSlides()}
+            />
+
         );
     }
 }
