@@ -120,7 +120,7 @@ export const pages: Pages = {
             ]
         },
         es: {
-            subTitle: "Asegúrese de tener todos los documentos que necesita para estar preparado.",
+            subTitle: "Asegura que tienes todos los documentos que necesitas.",
             checklist: [
                 {
                     title: "Pasaporte"
