@@ -21,7 +21,7 @@
   "bugs": {
     "url": "https://github.com/kindtechproject/childportal/issues"
   },
-  "homepage": "https://kindtechproject.github.io/childportal/",
+  "homepage": "https://kindtechproject.github.io/childportal",
   "dependencies": {
     "@microsoft/fast-components-foundation-react": "^3.0.0",
     "@microsoft/fast-jss-manager": "^4.0.0",
