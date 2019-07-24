@@ -36,14 +36,14 @@ const kidsLikeYouStyles: ComponentStyles<KidsLikeYouClassNameContract, {}> = {
     kidsLikeYou_cardTitle: {
         margin: "0",
         fontFamily: "Roboto, Arial, sans-serif",
-        fontSize: "24px",
+        fontSize: "3em",
         fontWeight: "700",
         color: accentColor
     },
     kidsLikeYou_cardContent: {
         margin: "0",
         fontFamily: "Roboto, Arial, sans-serif",
-        fontSize: "20px",
+        fontSize: "2.5em",
         color: accentColor
     },
     kidsLikeYou_cardContentRegion: {

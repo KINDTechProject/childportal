@@ -11,8 +11,8 @@ export interface CardClassNameContract {
 
 const cardStyles: ComponentStyles<CardClassNameContract, {}> = {
     card: {
-        height: "400px",
-        width: "calc(100vw - 120px)",
+        width: "calc(100vw - 180px)",
+        minHeight: "calc(100vh - 450px)",
         margin: "0 auto",
         overflow: "hidden",
         borderRadius: "5px",
@@ -20,7 +20,7 @@ const cardStyles: ComponentStyles<CardClassNameContract, {}> = {
     },
     card_imageRegion: {
         backgroundColor: "#F2F2D9",
-        padding: "20px",
+        padding: "80px 20px 80px 20px",
         textAlign: "center",
     },
     card_contentRegion: {
@@ -28,14 +28,15 @@ const cardStyles: ComponentStyles<CardClassNameContract, {}> = {
     },
     card_title: {
         fontFamily: "Roboto, Arial, sans-serif",
-        fontSize: "24px",
+        fontSize: "3.5em",
         fontWeight: "700",
         color: accentColor,
-        marginTop: "0"
+        marginTop: "0.67em"
     },
     card_content: {
         fontFamily: "Roboto, Arial, sans-serif",
-        fontSize: "20px",
+        fontSize: "3em",
+        padding: "0 0.67em 0 0.67em",
         color: accentColor
     }
 }

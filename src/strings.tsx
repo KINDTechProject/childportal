@@ -300,7 +300,7 @@ export const pages: Pages = {
                     embeddedVideo: (
                         <iframe
                             width="100%"
-                            height="300px"
+                            height="500px"
                             src="https://www.youtube.com/embed/QF8aU6KD5SA"
                             frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -314,7 +314,7 @@ export const pages: Pages = {
                     embeddedVideo: (
                         <iframe
                             width="100%"
-                            height="300px"
+                            height="500px"
                             src="https://www.youtube.com/embed/YBcttiFNO3Y"
                             frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -328,7 +328,7 @@ export const pages: Pages = {
                     embeddedVideo: (
                         <iframe
                             width="100%"
-                            height="300px"
+                            height="500px"
                             src="https://www.youtube.com/embed/ANhfNvLxoo8"
                             frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -342,7 +342,7 @@ export const pages: Pages = {
                     embeddedVideo: (
                         <iframe
                             width="100%"
-                            height="300px"
+                            height="500px"
                             src="https://www.youtube.com/embed/Y0qOrYzDrSA"
                             frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -356,7 +356,7 @@ export const pages: Pages = {
                     embeddedVideo: (
                         <iframe
                             width="100%"
-                            height="300px"
+                            height="500px"
                             src="https://www.youtube.com/embed/RnwPw1N_gkM"
                             frameBorder="0"
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"

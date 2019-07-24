@@ -39,9 +39,11 @@ class TodoItem extends Foundation<
                     <h2>
                         {this.props.title}
                     </h2>
-                    <p>
-                        {this.props.content}
-                    </p>
+                    {this.props.content &&
+                        <p>
+                            {this.props.content}
+                        </p>
+                    }
                 </div>
             </div>
         );

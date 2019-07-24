@@ -15,10 +15,10 @@ import {
 import {
     pages
 } from "../../strings";
-import { Carousel, CarouselSlide } from '@microsoft/fast-components-react-msft';
+import { Carousel } from '@microsoft/fast-components-react-msft';
+import { createCarouselSlidesFromCards } from "../../utilities";
+
 import { connect, MapStateToProps } from "react-redux";
-import { Card } from "../card";
-import { CardHandledProps } from "../card/card.props";
 
 
 class YourResponsibilities extends Foundation<
@@ -42,43 +42,21 @@ class YourResponsibilities extends Foundation<
         <h1 className={get(this.props, "managedClasses.yourResponsibilities_title")}>
             {pages.pageTitles[this.props.language].yourResponsibilities}
         </h1>
-                { this.renderCards() }
+                { this.renderCarousel() }
             </div >
         );
-    }
-
-
-    private getCarouselSlides(): CarouselSlide[] {
-    let object: CarouselSlide[] = [];
-    var cards = pages.yourResponsibilities[this.props.language].cards;
-    var i;
-    for (i = 0; i < cards.length; i++) {
-        object[i] = {
-            content: this.getContents(cards[i]),
-            id: i+1
-        };
-    }
-        return object;
-    } 
-    private getContents(cards: CardHandledProps): (className?: string) => React.ReactNode {
-        return (className?: string): React.ReactNode => (
-            <Card {...cards}
-            />
-        )
     }
 
     public generateClassNames(): string {
         return super.generateClassNames(get(this.props, "managedClasses.yourResponsibilities"))
     }
 
-    private renderCards(): React.ReactNode {
+    private renderCarousel(): React.ReactNode {
         return (
-
             <Carousel
                 label="Carousel"
-                items={this.getCarouselSlides()}
+                items={createCarouselSlidesFromCards(pages.yourResponsibilities[this.props.language].cards)}
             />
-
         );
     }
 }
