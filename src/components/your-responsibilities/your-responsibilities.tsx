@@ -38,10 +38,10 @@ class YourResponsibilities extends Foundation<
     public render(): React.ReactNode {
         return (
             <div className={this.generateClassNames()}>
-        <MenuBar logo={true} />
-        <h1 className={get(this.props, "managedClasses.yourResponsibilities_title")}>
-            {pages.pageTitles[this.props.language].yourResponsibilities}
-        </h1>
+                <MenuBar logo={true} />
+                <h1 className={get(this.props, "managedClasses.yourResponsibilities_title")}>
+                    {pages.pageTitles[this.props.language].yourResponsibilities}
+                </h1>
                 { this.renderCarousel() }
             </div >
         );

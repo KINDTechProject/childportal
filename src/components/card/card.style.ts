@@ -31,12 +31,13 @@ const cardStyles: ComponentStyles<CardClassNameContract, {}> = {
         fontSize: "3.5em",
         fontWeight: "700",
         color: accentColor,
-        marginTop: "0.67em"
+        marginTop: "0.67em",
+        padding: "0 1em"
     },
     card_content: {
         fontFamily: "Roboto, Arial, sans-serif",
         fontSize: "3em",
-        padding: "0 0.67em 0 0.67em",
+        padding: "0 1em",
         color: accentColor
     }
 }

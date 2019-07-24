@@ -59,5 +59,6 @@ typings/
 .env
 
 # build directory
-www
+www/*
+!www/CNAME
 dist
