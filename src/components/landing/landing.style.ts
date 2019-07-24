@@ -2,6 +2,7 @@ import { ComponentStyles } from "@microsoft/fast-jss-manager-react";
 import {
     accentColor
 } from "../../style.constants";
+import { pageTitle } from "../../style.utilities";
 
 export interface LandingClassNameContract {
     landing?: string;
@@ -18,6 +19,10 @@ const landingStyles: ComponentStyles<LandingClassNameContract, {}> = {
     },
     landing_contentRegion: {
     },
+    landing_contentRegionTitle: {
+        ...pageTitle,
+        marginTop: "5px"
+    },
     landing_contentRegionList: {
         borderRadius: "5px",
         padding: "0",
@@ -26,7 +31,7 @@ const landingStyles: ComponentStyles<LandingClassNameContract, {}> = {
         listStyle: "none",
         textAlign: "center",
         "& li": {
-            padding: "10px",
+            padding: "2em 10px 10px 10px",
             "& a": {
                 color: "white",
                 textDecoration: "none",

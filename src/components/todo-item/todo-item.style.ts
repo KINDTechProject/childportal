@@ -20,11 +20,11 @@ const todoItemStyles: ComponentStyles<TodoItemClassNameContract, {}> = {
         flexGrow: "1",
         padding: "20px",
         "& h2": {
-            fontSize: "28px",
+            fontSize: "3em",
             margin: "0"
         },
         "& p": {
-            fontSize: "22px"
+            fontSize: "2.25em"
         }
     },
     todoItem_inputRegion: {
@@ -33,8 +33,8 @@ const todoItemStyles: ComponentStyles<TodoItemClassNameContract, {}> = {
             position: "relative"
         },
         "& input": {
-            width: "36px",
-            height: "36px",
+            width: "48px",
+            height: "48px",
             opacity: 0
         },
         "& span": {

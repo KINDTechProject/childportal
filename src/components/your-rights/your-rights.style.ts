@@ -15,7 +15,8 @@ const yourRightsStyles: ComponentStyles<YourRightsClassNameContract, {}> = {
     yourRights: {
         backgroundColor: yourRightsBackplate,
         minHeight: "100vh",
-        height: "100%"
+        height: "100%",
+        textAlign: "center"
     },
     yourRights_title: {
         ...pageTitle

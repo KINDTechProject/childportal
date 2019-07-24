@@ -16,7 +16,7 @@ class MenuBar extends React.Component<MenuBarProps, {}> {
 
     public render(): React.ReactNode {
         return (
-            <div style={{display: "flex", backgroundColor: "white", marginBottom: "20px"}}>
+            <div style={{display: "flex", backgroundColor: "white", marginBottom: "20px", height: "120px"}}>
                 <Menu />
                 {this.renderLogo()}
                 <LanguageSelect />
@@ -27,8 +27,8 @@ class MenuBar extends React.Component<MenuBarProps, {}> {
     private renderLogo(): React.ReactNode {
         if (this.props.logo) {
             return (
-                <div style={{ textAlign: "left", flexGrow: 1 }}>
-                    <SmallLogo kindTextColor={accentColor} padding={"20px 0"} language={this.props.language} />
+                <div style={{ textAlign: "left", flexGrow: 1, marginTop: "13px" }}>
+                    <SmallLogo kindTextColor={accentColor} padding={"25px 0"} language={this.props.language} />
                 </div>
             );
         }

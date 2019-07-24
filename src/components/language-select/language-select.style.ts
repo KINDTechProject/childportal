@@ -10,18 +10,19 @@ export interface LanguageSelectClassNameContract {
 const languageSelectStyles: ComponentStyles<LanguageSelectClassNameContract, {}> = {
     languageSelect: {
         padding: "20px 40px 20px 20px",
+        marginTop: "13px",
         "&::before, &::after": {
             content: "''",
             position: "absolute",
-            top: "30px",
+            top: "58px",
             background: accentColor,
-            width: "10px",
-            height: "2px",
+            width: "20px",
+            height: "3px",
             borderRadius: "2px"
         },
         "&::before": {
             transform: "rotate(45deg)",
-            right: "26px"
+            right: "34px"
         },
         "&::after": {
             transform: "rotate(-45deg)",
@@ -33,8 +34,9 @@ const languageSelectStyles: ComponentStyles<LanguageSelectClassNameContract, {}>
             border: "none",
             color: accentColor,
             appearance: "none",
-            fontSize: "18px",
+            fontSize: "3em",
             fontFamily: "Roboto, Arial, sans-serif",
+            marginRight: "15px"
         }
     }
 }

@@ -11,9 +11,9 @@ export interface MenuClassNameContract {
 }
 
 /* changable vars */
-const height: number = 4;
-const rectSideX: number = 30;
-const rectSizeY: number = 20;
+const height: number = 12;
+const rectSideX: number = 90;
+const rectSizeY: number = 60;
 const transitionDuration: string = "0.3s";
 const borderRadius: string = "3px";
 
@@ -55,13 +55,16 @@ const menuStyles: ComponentStyles<MenuClassNameContract, {}> = {
             "& a": {
                 color: "white",
                 textDecoration: "none",
-                fontFamily: "Fredoka One, Arial, sans-serif"
+                fontFamily: "Fredoka One, Arial, sans-serif",
+                fontSize: "4em",
+                fontWeight: "100"
             }
         }
     },
     menu__open: {
         display: "block",
-        zIndex: "1",
+        zIndex: "9999",
+        textAlign: "center",
         position: "absolute",
         background: accentColor,
         height: "100vh",
@@ -94,6 +97,7 @@ const menuStyles: ComponentStyles<MenuClassNameContract, {}> = {
         width: `${boxWidth}px`,
         height: `${boxHeight}px`,
         margin: "22px",
+        marginTop: "35px",
         border: "none",
         background: "transparent",
         "& span": {
