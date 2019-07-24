@@ -9,7 +9,7 @@ export function createCarouselSlidesFromCards(cards: CardHandledProps[]): Carous
         slides[i] = {
             content: getContents(cards[i]),
             id: String(i+1),
-            theme: CarouselSlideTheme.dark
+            theme: CarouselSlideTheme.light
         };
     }
     return slides;
