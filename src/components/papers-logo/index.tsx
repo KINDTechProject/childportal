@@ -5,7 +5,7 @@ export class PapersLogo extends React.Component<{}, {}> {
 
     public render(): React.ReactNode {
         return (
-            <svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="408" height="408" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M32.5225 9.16602L22.6862 10.6024L15.8452 18.8094V105.484H92.5571L83.4526 114.618L85.3708 124.137L91.1953 129.845L103.554 126.525L108.496 119.032L107.2 20.3613L114.874 9.16602H32.5225Z" fill="#F8D0B2" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1124 104.922L7.64033 107.372L2.64026 115.481L5.82939 126.779L15.3426 129.845H91.1063L83.3645 117.384L91.1063 104.922H19.1124Z" fill="#F2F2D9" />
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M134.68 40.6474L133.353 16.3836C133.353 16.3836 130.253 8.95312 121.248 8.95312C112.243 8.95312 109.592 16.3836 109.592 16.3836V40.6474H134.68Z" fill="#4783B1" />

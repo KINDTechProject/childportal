@@ -20,7 +20,8 @@ const landingStyles: ComponentStyles<LandingClassNameContract, {}> = {
     landing_contentRegion: {
     },
     landing_contentRegionTitle: {
-        ...pageTitle
+        ...pageTitle,
+        marginTop: "5px"
     },
     landing_contentRegionList: {
         borderRadius: "5px",
@@ -30,7 +31,7 @@ const landingStyles: ComponentStyles<LandingClassNameContract, {}> = {
         listStyle: "none",
         textAlign: "center",
         "& li": {
-            padding: "10px",
+            padding: "2em 10px 10px 10px",
             "& a": {
                 color: "white",
                 textDecoration: "none",

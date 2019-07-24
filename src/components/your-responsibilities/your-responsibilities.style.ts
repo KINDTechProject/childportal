@@ -15,7 +15,8 @@ const yourResponsibilitiesStyles: ComponentStyles<YourResponsibilitiesClassNameC
     yourResponsibilities: {
         backgroundColor: yourResponsibilitiesBackplate,
         minHeight: "100vh",
-        height: "100%"
+        height: "100%",
+        textAlign: "center"
     },
     yourResponsibilities_title: {
         ...pageTitle

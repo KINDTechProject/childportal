@@ -63,7 +63,8 @@ const menuStyles: ComponentStyles<MenuClassNameContract, {}> = {
     },
     menu__open: {
         display: "block",
-        zIndex: "1",
+        zIndex: "9999",
+        textAlign: "center",
         position: "absolute",
         background: accentColor,
         height: "100vh",
@@ -96,6 +97,7 @@ const menuStyles: ComponentStyles<MenuClassNameContract, {}> = {
         width: `${boxWidth}px`,
         height: `${boxHeight}px`,
         margin: "22px",
+        marginTop: "35px",
         border: "none",
         background: "transparent",
         "& span": {

@@ -17,7 +17,8 @@ import {
 import {
     pages
 } from "../../strings";
-import { Carousel } from "../carousel";
+import { Carousel } from '@microsoft/fast-components-react-msft';
+import { createCarouselSlidesFromCards } from "../../utilities";
 
 class YourRights extends Foundation<
     YourRightsHandledProps,
@@ -38,7 +39,7 @@ class YourRights extends Foundation<
                 <h1 className={get(this.props, "managedClasses.yourRights_title")}>
                     {pages.pageTitles[this.props.language].yourRights}
                 </h1>
-                {this.renderCards()}
+                {this.renderCarousel()}
             </div>
         );
     }
@@ -47,9 +48,12 @@ class YourRights extends Foundation<
         return super.generateClassNames(get(this.props, "managedClasses.yourRights"))
     }
 
-    private renderCards(): React.ReactNode {
+    private renderCarousel(): React.ReactNode {
         return (
-            <Carousel cards={pages.yourRights[this.props.language].cards} />
+            <Carousel
+                label="Carousel"
+                items={createCarouselSlidesFromCards(pages.yourRights[this.props.language].cards)}
+            />
         );
     }
 }

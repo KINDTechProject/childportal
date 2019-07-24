@@ -5,7 +5,7 @@ export class LawyerLogo extends React.Component<{}, {}> {
 
     public render(): React.ReactNode {
         return (
-            <svg width="136" height="136" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="408" height="408" viewBox="0 0 136 136" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="28" y="0" width="103" height="102">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M28.02 0H130.426V101.562H28.02V0Z" fill="white" />
                 </mask>

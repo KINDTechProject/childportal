@@ -13,7 +13,7 @@ const languageSelectStyles: ComponentStyles<LanguageSelectClassNameContract, {}>
         
         "& select": {
             position: "relative",
-            width: "185px",
+            width: "200px",
             background: "url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #FFF",
             border: "none",
             color: accentColor,
