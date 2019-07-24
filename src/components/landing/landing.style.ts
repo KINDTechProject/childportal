@@ -2,6 +2,7 @@ import { ComponentStyles } from "@microsoft/fast-jss-manager-react";
 import {
     accentColor
 } from "../../style.constants";
+import { pageTitle } from "../../style.utilities";
 
 export interface LandingClassNameContract {
     landing?: string;
@@ -17,6 +18,9 @@ const landingStyles: ComponentStyles<LandingClassNameContract, {}> = {
         height: "100%"
     },
     landing_contentRegion: {
+    },
+    landing_contentRegionTitle: {
+        ...pageTitle
     },
     landing_contentRegionList: {
         borderRadius: "5px",

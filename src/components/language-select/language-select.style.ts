@@ -9,32 +9,18 @@ export interface LanguageSelectClassNameContract {
 
 const languageSelectStyles: ComponentStyles<LanguageSelectClassNameContract, {}> = {
     languageSelect: {
-        padding: "20px 40px 20px 20px",
-        "&::before, &::after": {
-            content: "''",
-            position: "absolute",
-            top: "30px",
-            background: accentColor,
-            width: "10px",
-            height: "2px",
-            borderRadius: "2px"
-        },
-        "&::before": {
-            transform: "rotate(45deg)",
-            right: "26px"
-        },
-        "&::after": {
-            transform: "rotate(-45deg)",
-            right: "20px"
-        },
+        padding: "20px 5px 20px 20px",
+        
         "& select": {
             position: "relative",
-            background: "none",
+            width: "185px",
+            background: "url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right #FFF",
             border: "none",
             color: accentColor,
             appearance: "none",
-            fontSize: "18px",
+            fontSize: "3em",
             fontFamily: "Roboto, Arial, sans-serif",
+            marginRight: "15px"
         }
     }
 }
