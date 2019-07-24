@@ -12,9 +12,9 @@
 - `npm run deploy`
 
 
-##For Adding Content
+## For Adding Content
 `For additional content, modify the values in the strings.tsx. Add values to the variables preparationPlan,yourResponsibilities, yourRights, kidsLikeYou. To add a new logo, include the svg as a component under src\components and then export the component in src\components\index.ts`
 
-##For Developers
+## For Developers
 `The project uses a React UI framework available at https://github.com/microsoft/fast-dna/blob/master/README.md. The pages are not yet responsive and built for mobile version as the primary consumers of the information view content on ,mobile devices.`
 
